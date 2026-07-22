@@ -17,7 +17,7 @@ export default function NavBar() {
         <h1 className="text-primary font-serif font-bold text-5xl">
           Dojo Help Desk
         </h1>
-        <div className=" flex flex-1 justify-end-safe text-3xl gap-6  text-idle">
+        <div className=" flex flex-1 justify-end-safe gap-6">
           <Link href="/" className="link">
             Dashboard
           </Link>

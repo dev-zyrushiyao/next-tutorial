@@ -6,12 +6,8 @@ const placeHolder: string =
 export default function CompanyUpdates({ text }: { text?: string }) {
   return (
     <div className="bg-gray-200 p-3 rounded-lg">
-      <h4 className="font-serif font-semibold text-2xl tracking-wide text-black">
-        Title
-      </h4>
-      <p className="text-idle font-sans font-normal text-lg leading-10 py-3 tracking-wide">
-        {text ?? placeHolder}
-      </p>
+      <h4>Title</h4>
+      <p>{text ?? placeHolder}</p>
     </div>
   );
 }

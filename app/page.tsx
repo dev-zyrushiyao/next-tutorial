@@ -1,14 +1,12 @@
-import Button from "./components/button";
-import CompanyUpdates from "./components/company-updates";
+import PrimaryButton from "./components/PrimaryButton";
+import CompanyUpdates from "./components/CompanyUpdates";
 
 export default function Home() {
   return (
-    <main className="px-20 py-10 flex flex-col gap-5">
+    <main className="flex flex-col gap-5">
       <div>
-        <h3 className="text-primary font-serif font-semibold text-3xl tracking-wide">
-          Title
-        </h3>
-        <p className="text-idle font-sans font-normal text-xl leading-10 py-3 tracking-wide">
+        <h3>Dashboard</h3>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           non sunt iure ratione! Nemo omnis provident pariatur cum, ducimus
           suscipit sed consequuntur a unde in nisi debitis mollitia nesciunt
@@ -21,13 +19,11 @@ export default function Home() {
           dolorum delectus, debitis sunt? Minus, voluptatibus?
         </p>
         <div className="text-center">
-          <Button label="View Tickets"></Button>
+          <PrimaryButton label="View Tickets" />
         </div>
       </div>
       <div className="flex flex-col gap-5">
-        <h3 className="text-primary font-serif font-semibold text-3xl tracking-wide">
-          Company updates
-        </h3>
+        <h3>Company updates</h3>
         <CompanyUpdates text="RAT"></CompanyUpdates>
         <CompanyUpdates></CompanyUpdates>
         <CompanyUpdates></CompanyUpdates>
