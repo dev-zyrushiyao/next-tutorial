@@ -1,3 +1,4 @@
+import Link from "next/link";
 import TicketList from "../components/TicketList";
 
 export default async function Tickets() {
@@ -5,7 +6,7 @@ export default async function Tickets() {
     <main className="flex flex-col gap-5">
       <div>
         <h3>Tickets</h3>
-        <small className="font-sans text-base ">Currently open tickets</small>
+        <small>Currently open tickets</small>
       </div>
       <TicketList />
     </main>

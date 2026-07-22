@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Ticket } from "../interface/ticket-interface";
 
 async function getTickets(): Promise<Ticket[]> {
@@ -15,22 +16,24 @@ async function getTickets(): Promise<Ticket[]> {
 export default async function TicketList() {
   const tickets = await getTickets();
   return (
-    <div>
+    <>
       {tickets.length > 0 ? (
         tickets.map((ticket) => {
           return (
-            <div key={ticket.id} className="card my-5">
-              <h4>{ticket.title}</h4>
-              <p>{ticket.body.slice(0, 200)}...</p>
-              <div className={`pill ${ticket.priority}`}>
-                {ticket.priority} priority
+            <Link key={ticket.id} href={`/tickets/${ticket.id}`}>
+              <div className="card my-5">
+                <h4>{ticket.title}</h4>
+                <p>{ticket.body.slice(0, 200)}...</p>
+                <div className={`pill ${ticket.priority}`}>
+                  {ticket.priority} priority
+                </div>
               </div>
-            </div>
+            </Link>
           );
         })
       ) : (
-        <p className="text-center">There are no empty tickets</p>
+        <p className="text-center">There are no tickets</p>
       )}
-    </div>
+    </>
   );
 }
