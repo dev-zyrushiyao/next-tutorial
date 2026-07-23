@@ -6,7 +6,7 @@ async function getTickets(): Promise<Ticket[]> {
   await setTimeout(1000);
 
   const res = await fetch("http://localhost:4000/tickets", {
-    next: { revalidate: 30 },
+    next: { revalidate: 0 },
   });
 
   if (!res.ok) {

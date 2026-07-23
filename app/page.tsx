@@ -1,5 +1,6 @@
 import PrimaryButton from "./components/PrimaryButton";
 import CompanyUpdates from "./components/CompanyUpdates";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
           dolorum delectus, debitis sunt? Minus, voluptatibus?
         </p>
         <div className="text-center">
-          <PrimaryButton label="View Tickets" />
+          <Link href={"/tickets"}>
+            <PrimaryButton label="View Tickets" />
+          </Link>
         </div>
       </div>
       <div className="flex flex-col gap-5">

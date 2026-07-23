@@ -2,6 +2,14 @@ import Link from "next/link";
 import Logo from "./ninja-logo.png";
 import Image from "next/image";
 
+type NavLink = { name: string; link: string };
+
+const navLinks: NavLink[] = [
+  { name: "Dashboard", link: "/" },
+  { name: "Tickets", link: "/tickets" },
+  { name: "Create Ticket", link: "/tickets/create" },
+];
+
 export default function NavBar() {
   return (
     <nav className="pt-14 px-14 pb-7 ">
@@ -22,12 +30,13 @@ export default function NavBar() {
         </Link>
 
         <div className=" flex flex-1 justify-end-safe gap-6">
-          <Link href="/" className="link">
-            Dashboard
-          </Link>
-          <Link href="/tickets" className="link">
-            Tickets
-          </Link>
+          {navLinks.map((navLink) => {
+            return (
+              <Link key={navLink.name} href={navLink.link} className="link">
+                {navLink.name}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </nav>

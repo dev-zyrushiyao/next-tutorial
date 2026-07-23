@@ -3,7 +3,7 @@ import Loading from "@/app/loading";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const res = await fetch("http://localhost:4000/tickets");

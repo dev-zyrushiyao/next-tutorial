@@ -1,11 +1,23 @@
-import Link from "next/link";
 
-export default function PrimaryButton({ label }: { label: string }) {
+
+type ButtonType = "button" | "submit";
+
+export default function PrimaryButton({
+  label,
+  type,
+  disabled,
+}: {
+  label: string;
+  type?: ButtonType;
+  disabled?: boolean;
+}) {
   return (
-    <Link href={"/tickets"}>
-      <button type="button" className="btn-primary">
-        {label}
-      </button>
-    </Link>
+    <button
+      type={type ? type : "button"}
+      className="btn-primary"
+      disabled={disabled}
+    >
+      {label}
+    </button>
   );
 }

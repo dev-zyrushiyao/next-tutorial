@@ -20,6 +20,49 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel dolor nec nunc tempor pulvinar.Morbi ante neque, tempus id tortor sed, fringilla ornare mauris. Mauris nibh ligula, tempor eget feugiat id, convallis sed orci. Duis finibus, neque quis pharetra lacinia, lectus massa hendrerit ligula, ut venenatis dolor nibh sit amet arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut cursus sapien ut justo tristique aliquam. Phasellus a dapibus dolor. Donec dignissim sapien sed ante congue pulvinar nec ut lacus. Maecenas finibus faucibus volutpat. Phasellus sed aliquam odio. Maecenas convallis eleifend tellus, ac vulputate augue vestibulum vel. Phasellus id facilisis odio, quis tincidunt purus. Phasellus rutrum dapibus efficitur. Curabitur eu vehicula mauris. Vestibulum convallis velit varius lectus suscipit mollis. Suspendisse potenti. Sed velit enim, rutrum in felis et, congue posuere tortor. Phasellus ornare, mi vitae sodales mollis, dui diam blandit sapien, et fringilla eros magna a diam. Praesent dapibus ac metus in tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas iaculis tincidunt odio, eget posuere neque egestas et. Sed cursus ultrices odio, sed iaculis urna condimentum ut.",
       "priority": "high",
       "user_email": "mario@mushroom.com"
+    },
+    {
+      "title": "Test Title",
+      "body": "Body Test",
+      "priority": "medium",
+      "email": "yoshi@email.com",
+      "id": "ZHs10cyJG5M"
+    },
+    {
+      "title": "React Error",
+      "body": "I have a React Error",
+      "priority": "low",
+      "email": "yoshi@email.com",
+      "id": "brWpGCbAlCE"
+    },
+    {
+      "title": "Can you center the div? (meme)",
+      "body": "Please center the div",
+      "priority": "high",
+      "email": "memegod@email.com",
+      "id": "NyQBdgKCKIU"
+    },
+    {
+      "title": "This is a new sample ticket",
+      "body": "This is a sample body",
+      "priority": "medium",
+      "email": "mario@dev.com",
+      "id": "bFGyXOi_4Zk"
+    },
+    {
+      "title": "Another ticket",
+      "body": "new body",
+      "priority": "low",
+      "email": "yoshi@email.com",
+      "id": "v5AJbt4iVF4"
+    },
+    {
+      "title": "test",
+      "body": "test",
+      "priority": "low",
+      "email": "mario@dev.com",
+      "id": "KiRmOuUXU8Q"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
