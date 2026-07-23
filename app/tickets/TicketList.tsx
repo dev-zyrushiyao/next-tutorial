@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Ticket } from "../interface/ticket-interface";
 
+
+
 async function getTickets(): Promise<Ticket[]> {
   const res = await fetch("http://localhost:4000/tickets", {
     next: { revalidate: 30 },

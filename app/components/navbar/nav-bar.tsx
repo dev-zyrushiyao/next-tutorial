@@ -10,7 +10,6 @@ export default function NavBar() {
           src={Logo}
           alt="ninja logo"
           width={60}
-          quality={100}
           placeholder="blur"
           className="mx-4.75"
         ></Image>

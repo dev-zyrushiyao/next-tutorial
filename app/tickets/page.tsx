@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TicketList from "../components/TicketList";
+import TicketList from "./TicketList";
 
 export default async function Tickets() {
   return (

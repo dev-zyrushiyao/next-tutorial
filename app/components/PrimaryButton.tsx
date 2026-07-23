@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PrimaryButton({ label }: { label: string }) {
   return (
-    <Link href={"/ticket"}>
+    <Link href={"/tickets"}>
       <button type="button" className="btn-primary">
         {label}
       </button>

@@ -1,6 +1,15 @@
 import type { Ticket } from "@/app/interface/ticket-interface";
 import { notFound } from "next/navigation";
 
+export const dynamicParams = false;
+
+export async function getStaticParams() {
+  const res = await fetch("http://localhost:4000/tickets");
+  const tickets: Ticket[] = await res.json();
+
+  return tickets.map((ticket) => ({ id: ticket.id }));
+}
+
 async function getTicketData(id: string) {
   const res = await fetch(`http://localhost:4000/tickets/${id}`, {
     next: { revalidate: 60 },
