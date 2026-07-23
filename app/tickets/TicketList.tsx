@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Ticket } from "../interface/ticket-interface";
-
-
+import { setTimeout } from "timers/promises";
 
 async function getTickets(): Promise<Ticket[]> {
+  await setTimeout(1000);
+
   const res = await fetch("http://localhost:4000/tickets", {
     next: { revalidate: 30 },
   });
